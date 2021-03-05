@@ -20,14 +20,22 @@
             aria-required
           />
         </div>
+
         <div class="form-group">
-          <label for="surname" data-required>Your surname</label>
-          <input type="text" id="surname" name="surname" required />
+          <label for="surname">Your surname</label>
+          <input type="text" id="surname" name="surname" />
         </div>
+
+        <div class="form-group">
+          <label for="usermail" data-required>Mail Address</label>
+          <input type="email" name="useramail" id="usermail" required />
+        </div>
+
         <div class="form-group">
           <label for="message">Your message</label>
           <textarea id="message" name="message" rows="5"></textarea>
         </div>
+
         <button>Gönder</button>
       </fieldset>
     </form>

@@ -52,6 +52,7 @@ input.empty {
   border: 1px solid crimson;
   box-shadow: 1px 1px 5px crimson, inset 1px 1px 5px crimson;
   outline: none;
+  position: relative;
 }
 
 @media (min-width: 500px) {
