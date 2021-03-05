@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Feedback Form</legend>
+        <div class="form-group">
+          <label for="username" data-required>Your name</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            aria-required
+          />
+        </div>
+        <div class="form-group">
+          <label for="surname" data-required>Your surname</label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button>Gönder</button>
+      </fieldset>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
