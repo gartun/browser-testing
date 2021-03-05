@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./builtin-validation.css" />
+  </head>
+  <body>
+    <form>
+      <label for="usermail">Mail Address</label>
+      <input
+        type="email"
+        id="usermail"
+        name="usermail"
+        required
+        pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+      />
+      <hr />
+      <label for="username">Name</label>
+      <input type="text" minlength="4" maxlength="8" />
+      <p class="paletext">your name must have 3-8 characters</p>
+      <hr />
+      <label for="f1"
+        >Your favorite fruit is
+        <abbr title="This field is mandatory" aria-label="required"
+          >*</abbr
+        ></label
+      >
+      <input
+        type="text"
+        id="f1"
+        required
+        list="l1"
+        pattern="[Bb]anana|[Cc]herry|[Aa]pple|"
+      />
+      <datalist>
+        <option>Banana</option>
+        <option>Apple</option>
+        <option>Cherry</option>
+      </datalist>
+    </form>
+  </body>
+</html>

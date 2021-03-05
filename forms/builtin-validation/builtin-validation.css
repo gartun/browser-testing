@@ -1,0 +1,11 @@
+input:invalid {
+  outline: none;
+  border: 2px solid crimson;
+}
+
+.paletext {
+  opacity: 0.75;
+  margin-top: 0.2em;
+  text-indent: 2.7em;
+  font-size: 0.8rem;
+}
