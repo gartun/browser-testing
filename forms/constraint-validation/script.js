@@ -20,18 +20,16 @@ form.addEventListener("submit", function (e) {
 });
 
 function showError() {
-  if ("email".validity.valueMissing) {
-    mailError.textContent = "You need to enter an e-mail address.";
+  if (mail.validity.valueMissing) {
+    mailError.textContent = mail.validationMessage;
   } else if (mail.validity.typeMismatch) {
     // If the field doesn't contain an "email" address
     // display the following error message.
-    mailError.textContent = "Entered value needs to be an e-mail address.";
+    mailError.textContent = mail.validationMessage;
   } else if (mail.validity.tooShort) {
     // If the data is too short
     // display the following error message.
-    mailError.textContent = `Email should be at least ${
-      "email".minLength
-    } characters; you entered ${"email".value.length}.`;
+    mailError.textContent = mail.validationMessage;
   }
 
   // Set the styling appropriately

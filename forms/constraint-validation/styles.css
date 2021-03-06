@@ -1,3 +1,9 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
 body {
   font: 1em sans-serif;
   width: 200px;
@@ -19,22 +25,19 @@ input[type="email"] {
 
   font-family: inherit;
   font-size: 90%;
-
-  box-sizing: border-box;
 }
 
 /* This is our style for the invalid fields */
-input:invalid {
+
+/* It's better to show the error after receiving focus */
+input:focus:invalid {
   border-color: #900;
   background-color: #fdd;
-}
-
-input:focus:invalid {
   outline: none;
 }
 
 /* This is the style of our error messages */
-.error {
+span.error {
   width: 100%;
   padding: 0;
 
@@ -42,10 +45,8 @@ input:focus:invalid {
   color: white;
   background-color: #900;
   border-radius: 0 0 5px 5px;
-
-  box-sizing: border-box;
 }
 
-.error.active {
+span.error.active {
   padding: 0.3em;
 }

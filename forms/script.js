@@ -1,3 +1,7 @@
+/*
+Email regex= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+*/
 const btn = document.querySelector("button"),
   required = document.querySelectorAll("[required]");
 
