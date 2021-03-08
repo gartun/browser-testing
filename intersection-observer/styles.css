@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.005em;
+}
+
+section:first-child {
+  background: coral;
+}
+
+section:nth-child(2) {
+  background: pink;
+}
+
+section:nth-child(3) {
+  background: magenta;
+}
+
+section:nth-child(4) {
+  background: yellow;
+}
